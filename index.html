@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Bita Coffee and Burger — Menu</title>
+<meta name="description" content="Digital menu for Bita Coffee and Burger" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;600;700&family=Karla:wght@400;500;600;700&family=Noto+Sans+Ethiopic:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <h1>Bita Coffee &amp; Burger</h1>
+  <p class="tagline">Menu</p>
+</header>
+
+<div class="controls">
+  <div class="search-bar">
+    <input type="search" id="searchInput" placeholder="Search the menu…" aria-label="Search the menu" />
+  </div>
+  <nav class="category-nav" id="categoryNav" aria-label="Menu categories"></nav>
+</div>
+
+<main id="menuMain">
+  <p class="no-results" id="noResults" style="display:none;">No items match your search — try a different word.</p>
+</main>
+
+<footer class="site-footer">
+  <p id="vatNote"></p>
+</footer>
+
+<script src="menu-data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
