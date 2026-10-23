@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', () => {
   const nav = document.getElementById('categoryNav');
   const main = document.getElementById('menuMain');
@@ -17,7 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
   MENU_DATA.categories.forEach(cat => {
     const id = slugify(cat.category);
 
-    // Nav pill
     const navBtn = document.createElement('button');
     navBtn.type = 'button';
     navBtn.className = 'nav-pill';
@@ -29,7 +27,6 @@ document.addEventListener('DOMContentLoaded', () => {
     nav.appendChild(navBtn);
     navButtons.push(navBtn);
 
-    // Section
     const section = document.createElement('section');
     section.className = 'menu-section';
     section.id = id;
@@ -79,7 +76,6 @@ document.addEventListener('DOMContentLoaded', () => {
     main.appendChild(section);
   });
 
-  // Highlight the active category pill while scrolling
   const sections = document.querySelectorAll('.menu-section');
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -92,7 +88,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }, { rootMargin: '-20% 0px -70% 0px' });
   sections.forEach(sec => observer.observe(sec));
 
-  // Live search across all categories
   searchInput.addEventListener('input', () => {
     const q = searchInput.value.trim().toLowerCase();
     let anyVisible = false;
