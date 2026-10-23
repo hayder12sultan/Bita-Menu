@@ -1,35 +1,70 @@
 # Bita Coffee & Burger Menu
 
-A lightweight digital menu for Bita Coffee & Burger. The app displays menu categories, item names, descriptions, prices, and allows users to search the menu quickly.
+A clean and responsive digital menu for Bita Coffee & Burger. This project displays menu categories, item details, and prices in a simple, modern layout that is easy to update.
+
+## Overview
+
+The menu is designed for quick browsing and easy maintenance. Menu items are stored in a separate JavaScript file, so updates can be made without editing the page structure or styling.
 
 ## Features
 
-- Search menu items by name or keyword
-- Filter by menu category
-- Clean, responsive cafe-style layout
-- Menu data stored separately for easy updates
+- Search menu items by keyword
+- Filter by category
+- Responsive layout for desktop and mobile
+- Easy-to-update menu data structure
+- Clean cafe-inspired design
 
 ## Project Structure
 
-- `menu-data.js` — menu categories and item data
-- `index.html` — page structure
-- `style.css` — styling and layout
-- `script.js` — renders the menu and handles interactions
+```text
+Bita-Menu/
+├── index.html
+├── style.css
+├── script.js
+├── menu-data.js
+└── README.md
+```
+
+### File Descriptions
+
+- `index.html` — page structure and content containers
+- `style.css` — colors, layout, typography, and responsive design
+- `script.js` — renders the menu and handles search/filter behavior
+- `menu-data.js` — stores all menu categories, products, and pricing data
+- `README.md` — project overview and usage instructions
 
 ## How to Run
 
-Open `index.html` directly in a browser, or serve the project locally:
+You can open `index.html` directly in a browser, or run a local server:
 
 ```bash
 python -m http.server 8000
 ```
 
-Then visit:
+Then open:
 
 ```text
 http://localhost:8000
 ```
 
+## How to Update the Menu
+
+Edit the menu entries in `menu-data.js` to add or change:
+
+- category names
+- item names
+- descriptions
+- prices
+- tags or labels
+
+The page will automatically reflect the new data when the script renders.
+
+## Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript
+
 ## Notes
 
-This project is designed to make menu updates simple: you can edit the menu data in `menu-data.js` and the page will reflect the changes automatically through the JavaScript rendering logic.
+This project is built to be lightweight and easy to maintain, making it suitable for small cafés, restaurants, or quick digital menu setups.
